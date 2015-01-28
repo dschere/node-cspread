@@ -4,13 +4,13 @@ NODE-CSPREAD
 
 Overview:
 
-     This is a C++ addon to nodejs to interface with the spread C API to provide
+This is a C++ addon to nodejs to interface with the spread C API to provide
 a high performance binding to the spread toolkit (see www.spread.org). It contains a thin abstraction called SpreadSession which provides an event based interface where the end user supplies a set of callbacks to handle various events. 
 
 
 Build & Install:
 
-     You must first have the spread toolkit built and installed. The binding.gpy expects the
+You must first have the spread toolkit built and installed. The binding.gpy expects the
 spread to be installed in the /usr/local/lib directory. Next you can build the addon by executing the following
 
 cd node-cspread
@@ -38,11 +38,12 @@ events
 
 Example:
 
+'''
 function success( session ) {
      session.join( “group name” );
      session.dataHandler = function(  group, sender, data ){
 
-           console.log( group + "," + sender + "," + data );
+     console.log( group + "," + sender + "," + data );
      };
      session.memberJoinedGroup =  function( group, sender ) {
            // detect when a new process has join a group
@@ -74,4 +75,5 @@ function success( session ) {
           “group name”,  JSON.stringify( … some data … ) );
 
 
-};  
+}; 
+'''
