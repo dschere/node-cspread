@@ -1,0 +1,46 @@
+{
+  "name": "node-cspread",
+  "version": "0.1.1",
+  "author": {
+    "name": "David Schere @ Skyline LLC"
+  },
+  "email": "DSchere@skylinenet.net",
+  "description": "C++ addon to interface to spread using the C API",
+  "main": "spread.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "repository": "",
+  "keywords": [
+    "addon",
+    "pubsub",
+    "virtual synchrony"
+  ],
+  "gypfile": true,
+  "_id": "node-cspread@0.1.1",
+  "dist": {
+    "shasum": "eea467976b958509b04fde7a0c08af3fdcf81fd9",
+    "tarball": "http://registry.npmjs.org/node-cspread/-/node-cspread-0.1.1.tgz"
+  },
+  "_from": "node-cspread@*",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "skyline",
+    "email": "dschere@skylinenet.net"
+  },
+  "maintainers": [
+    {
+      "name": "skyline",
+      "email": "dschere@skylinenet.net"
+    }
+  ],
+  "directories": {},
+  "_shasum": "eea467976b958509b04fde7a0c08af3fdcf81fd9",
+  "_resolved": "https://registry.npmjs.org/node-cspread/-/node-cspread-0.1.1.tgz",
+  "readme": "ERROR: No README data found!"
+}
