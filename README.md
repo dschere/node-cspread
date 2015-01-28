@@ -23,12 +23,14 @@ Examples:
 
 API:
 
+<pre>
 SpreadSession( 
     daemon_address /* 4803@localhost*/,
     uniqueName /* system wide unique name like a  UUID */,
     success /* callback function executed when connected */,
     failure  /* called if we can't connect */
 ); 
+</pre>
 
 If successful in connecting to the spread daemon, the success function
 above is called with an instance of a spread session object. Inside this
