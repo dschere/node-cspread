@@ -38,7 +38,7 @@ events
 
 Example:
 
-
+<pre>
 function success( session ) {
      session.join( “group name” );
      session.dataHandler = function(  group, sender, data ){
@@ -70,4 +70,5 @@ function success( session ) {
      session.multicast( session.SAFE_MESS, session.SELF_DISCARD,
           “group name”,  JSON.stringify( … some data … ) );
 }; 
+</pre>
 
