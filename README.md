@@ -38,11 +38,10 @@ events
 
 Example:
 
-'''
+
 function success( session ) {
      session.join( “group name” );
      session.dataHandler = function(  group, sender, data ){
-
      console.log( group + "," + sender + "," + data );
      };
      session.memberJoinedGroup =  function( group, sender ) {
@@ -67,13 +66,8 @@ function success( session ) {
      session.onError = function( errorText ) {
           // general error event
      };
-
-
-
      // to send a message to other groups
      session.multicast( session.SAFE_MESS, session.SELF_DISCARD,
           “group name”,  JSON.stringify( … some data … ) );
-
-
 }; 
-'''
+
