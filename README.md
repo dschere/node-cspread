@@ -11,7 +11,7 @@ a high performance binding to the spread toolkit (see www.spread.org). It contai
 Build & Install:
 
      You must first have the spread toolkit built and installed. The binding.gpy expects the
-spread to be installed in the /usr/local/lib directory. Next you can build the addon by doing:
+spread to be installed in the /usr/local/lib directory. Next you can build the addon by executing the following
 
 cd node-cspread
 node-gyp build
@@ -33,9 +33,7 @@ SpreadSession(
 If successful in connecting to the spread daemon, the success function
 above is called with an instance of a spread session object. Inside this
 function the user can join message groups and setup callbacks to handle 
-events:
-
-
+events
 
 
 Example:
